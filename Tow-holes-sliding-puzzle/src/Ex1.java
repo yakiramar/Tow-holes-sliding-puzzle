@@ -35,7 +35,7 @@ public class Ex1 {
 		
 		System.out.println("\n");
 	    movingBlock= p.towBlockLeft();
-	    System.out.println("test");
+	    System.out.println("teset");
 	    System.out.println("moving tow block sucsess2 ? "+movingBlock);
 	    p.printBoard(p.board);
 	    
