@@ -5,7 +5,7 @@ public class Puzzle {
 	String [][] board; // board game
 	String algorithmName; // the algorithm's name that we want tu use
 	Boolean withTime; // if to print the time running
-	String [][] boardSolution; // the board solution
+	String [][] boardSolution; // The board solution
 	
 	
 	public Puzzle(String input) {
