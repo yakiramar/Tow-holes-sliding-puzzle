@@ -3,7 +3,7 @@ public class Puzzle {
 	int columns; // How much Colums
 	int rows; // How much rows
 	String [][] board; // board game
-	String algorithmName; // the algorithm's name that we want tu use
+	String algorithmName; // The algorithm's name that we want tu use
 	Boolean withTime; // if to print the time running
 	String [][] boardSolution; // The board solution
 	
