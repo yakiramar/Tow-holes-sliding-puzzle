@@ -27,7 +27,7 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 		
-		String fileContent = readFileTXT("C:\\Users\\yakira\\eclipse-workspace\\Tow-holes-sliding-puzzle\\src\\input.txt");
+		String fileContent = readFileTXT("C:\\Users\\User\\git\\Tow-holes-sliding-puzzle\\Tow-holes-sliding-puzzle\\src\\input.txt");
 		//System.out.println(fileContent);
 		Puzzle p = new Puzzle(fileContent);
 		p.printPuzzle();
