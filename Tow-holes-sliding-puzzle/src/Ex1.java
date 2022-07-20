@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Ex1 {
 	
-	
 	// readFileText get String that contain path to txt file and return his content
 	public static  String readFileTXT(String filePath) {
 
@@ -32,11 +31,10 @@ public class Ex1 {
 		Puzzle p = new Puzzle(fileContent);
 		p.printPuzzle();
 		Boolean movingBlock;
-		
 		System.out.println("\n");
-	    movingBlock= p.towBlockLeft();
-	    System.out.println("teset");
-	    System.out.println("moving tow block sucsess2 ? "+movingBlock);
+	    movingBlock= p.oneBlockUp(1);
+	    System.out.println("test");
+	    System.out.println("moving tow block sucsess ? "+movingBlock);
 	    p.printBoard(p.board);
 	    
 		

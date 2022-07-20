@@ -6,6 +6,7 @@ public class Puzzle {
 	String algorithmName; // The algorithm's name that we want tu use
 	Boolean withTime; // if to print the time running
 	String [][] boardSolution; // The board solution
+	String actionOrder = "";
 	
 	
 	public Puzzle(String input) {
@@ -18,7 +19,6 @@ public class Puzzle {
 		boardSolution = new String [rows][columns];
 		int r = 0;
 		String [] numbersArray = inputArray[3].split(",");
-		
 		//Filling the board game
 		for(int i = 0; i< rows; i++) {	
 			for(int j = 0; j < columns; j++) {
@@ -61,8 +61,8 @@ public class Puzzle {
 	 */
 	
 	
-	//move one block down: 1- the first "_", 2- the second "_"
-	public Boolean oneBlockDown(int firstOrSecondBlock) {
+	//move one block up: 1- the first "_", 2- the second "_"
+	public Boolean oneBlockUp(int firstOrSecondBlock) {
 		for(int i = 0; i< rows -1; i++) {
 			for(int j = 0; j< columns; j++) {
 				if((firstOrSecondBlock == 1) && (board[i][j].equals("_")) && (!board [i+1][j].equals("_")) ){
@@ -77,8 +77,8 @@ public class Puzzle {
 		return false;
 	}
 	
-	//move one block up
-	public Boolean oneBlockUp(int firstOrSecondBlock) {
+	//move one block down
+	public Boolean oneBlockDown(int firstOrSecondBlock) {
 		for(int i = 1; i< rows; i++) {
 			for(int j = 0; j< columns; j++) {
 				if((firstOrSecondBlock == 1) && (board[i][j].equals("_")) && (!board [i-1][j].equals("_")) ){
